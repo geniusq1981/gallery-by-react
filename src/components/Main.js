@@ -59,6 +59,10 @@ class ImgFigure extends React.Component {
 		if(this.props.arrange.pos){
 			styleObj = this.props.arrange.pos;
 		}
+		if(this.props.arrange.isCenter){
+			styleObj['z-index'] = 11;
+			
+		}
 	    //如果图片的旋转角度有值，添加旋转css
 		if(this.props.arrange.rotate){
 			(['-moz-','-ms-','-webkit-','']).forEach(function(value){
