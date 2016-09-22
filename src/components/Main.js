@@ -240,6 +240,7 @@ class AppComponent extends React.Component {
 	      }
 	      imgArrangeArr.splice(centerIndex, 0, imgArrangeCenterArr[0]);
            
+	      //更新状态
 	      this.setState({
 	    	  imgArrangeArr:imgArrangeArr
 	      });
