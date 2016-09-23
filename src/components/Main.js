@@ -66,7 +66,7 @@ class ImgFigure extends React.Component {
 	    //如果图片的旋转角度有值，添加旋转css
 		if(this.props.arrange.rotate){
 			(['MozTransform','msTransform','WebkitTransform','transform']).forEach(function(value){
-				styleObj[value+'transform']='rotate('+this.props.arrange.rotate+'deg)';
+				styleObj[value]='rotate('+this.props.arrange.rotate+'deg)';
 			}.bind(this));		
 			}
 		let imgFigureClassName = "img-figure";
